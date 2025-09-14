@@ -40,13 +40,22 @@ The main goal of our project is to help music enthusiasts to separate the soundt
 
 ```
 Distortion/
-├── frontend/           # Client-side application
-├── backend/            # Server-side logic and API handling
-├── data/               # models, scripts
-├── ml/                 # Machine learning models, training, and inference scripts
-├── docker-compose.yml  # Orchestration file for running all services together
-├── .gitignore          # Git exclusion rules
-└── README.md           # Project overview and instructions
+├── code
+│   ├── datasets
+│   ├── deployment
+│   │   ├── api
+│   │   └── app
+│   └── models
+├── data
+│   ├── processed
+│   └── raw
+├── notebooks
+├── models
+├── services
+│   └── airflow
+│       ├── dags
+│       └── logs
+└── requirements.txt
 ```
 
 ---
