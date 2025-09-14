@@ -9,12 +9,12 @@
 
 ## 📌 Overview
 
-The main goal of our project is to help music enthusiasts to separate the soundtrack into several independent channels(such as bass, guitar, vocal) and allow them to enhance the quality of separated parts. For example, vocal actor can use just instrumental part without vocal to create its own cover.
+The main goal of our project is to help music enthusiasts to separate the soundtrack into several independent channels (such as bass, guitar, vocal) and allow them to enhance the quality of separated parts. For example, vocal actor can use just instrumental part without vocal to create its own cover.
 
 ---
 
 
-## 📖 Contents
+## 📖 Content
 - [📌 Overview](#-overview)
 - [🚀 Tech Stack](#-tech-stack)
 - [📁 Folder Structure](#-folder-structure)
