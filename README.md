@@ -131,9 +131,9 @@ Open frontend/index.html directly in your browser or use a local server (ex. "Li
 
 |       **Name**       |                     **Responsibilities**               |      **Email**      |
 |:--------------------:|:-----------------------------------------------:|:--------------------------:|
-| Ilya Grigorev        | - |         il.grigorev@innopolis.university                 |
-| Salavat Faizullin    | -       |               s.faizullin@innopolis.university           |
-| Vladimir Toporkov    | -       |               v.toporkov@innopolis.university           |
+| Ilya Grigorev        | Deploy, MLOps |         il.grigorev@innopolis.university                 |
+| Salavat Faizullin    | Model train, Backend      |               s.faizullin@innopolis.university           |
+| Vladimir Toporkov    | Data preprocessing, Frontend, DevOps      |               v.toporkov@innopolis.university           |
 
 ---
 
