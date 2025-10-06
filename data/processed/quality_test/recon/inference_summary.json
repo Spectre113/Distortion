@@ -1,0 +1,18 @@
+{
+  "model_checkpoint": "model_output/checkpoints/best_snr_db_5.pt",
+  "n_files_requested": 1,
+  "n_processed": 1,
+  "output_root": "guitar_dataset/processed/quality_test/recon",
+  "processed": [
+    {
+      "input_path": "guitar_dataset/processed/quality_test/orig/quality_test_1.wav",
+      "output_path": "guitar_dataset/processed/quality_test/recon/quality_test_1_resid_recon.wav",
+      "checkpoint": "model_output/checkpoints/best_snr_db_5.pt",
+      "sample_rate": 22050,
+      "chunk_duration": 3.0,
+      "n_chunks": 6,
+      "orig_len_samples": 377732,
+      "created_at": "2025-10-06T14:06:37Z"
+    }
+  ]
+}
