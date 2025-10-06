@@ -1,0 +1,37 @@
+{
+  "example_id": "example_000000",
+  "sample_rate": 22050,
+  "clip_duration": 3.0,
+  "min_stems": 1,
+  "max_stems": 8,
+  "energy_db_range": [
+    -10.0,
+    10.0
+  ],
+  "snr_db_range": [
+    5.0,
+    20.0
+  ],
+  "chosen_snr_db": 17.579120363852095,
+  "stems_meta": [
+    {
+      "stem_path": "IDMT-SMT-GUITAR_V2\\dataset2\\audio\\FS_V_vibrato_slow-fast.wav",
+      "db_change": 7.602816009585538,
+      "gain_lin": 2.399610758932123,
+      "orig_rms": 0.038865776457628017
+    },
+    {
+      "stem_path": "IDMT-SMT-GUITAR_V2\\dataset2\\audio\\LP_E_fret_0-20.wav",
+      "db_change": -3.5496441943131725,
+      "gain_lin": 0.6645348941207481,
+      "orig_rms": 0.06196917820598898
+    }
+  ],
+  "noise_meta": {
+    "snr_db_target": 17.579120363852095,
+    "rms_clean": 0.1018863078287171,
+    "rms_noise_before_gain": 0.011296432855317461,
+    "noise_gain": 1.191841438205595,
+    "overall_noise_profile_db": -25.0
+  }
+}
