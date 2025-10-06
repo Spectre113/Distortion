@@ -1,0 +1,15 @@
+batch_size: 8
+epochs: 10
+lr: 1e-3
+depth: 1
+strides: 4
+kernel_size: 15
+levels: 4
+features: 32
+feature_growth: 'add'
+clip_grad: 5.0
+train_frac: 0.9
+num_workers: 4
+monitor_metric: "snr_db"   # metric name to choose best model (must be present in metrics_config -> metrics)
+lr_step: 20
+lr_gamma: 0.5
