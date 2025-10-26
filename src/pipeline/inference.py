@@ -13,7 +13,7 @@ from tqdm.auto import tqdm
 import torch
 import torch.nn as nn
 
-from .model_pipeline import Waveunet
+from .model_engineering import Waveunet
 
 # ------------------------
 # Helpers: chunking & IO
