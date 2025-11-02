@@ -13,7 +13,7 @@ from tqdm.auto import tqdm
 import torch
 import torch.nn as nn
 
-from .model_engineering import Waveunet
+from wave_unet import Waveunet
 
 # ------------------------
 # Helpers: chunking & IO
@@ -161,7 +161,7 @@ def infer_single_recording(
                 # pad right side
                 batch_tensor = nn.functional.pad(batch_tensor, (0, sample_diff - sample_diff // 2))
             else:
-                raise ValueError(f"Expected a input_size > mix.shape[-1], but got {input_size} < {mix.shape[-1]}")
+                raise ValueError(f"Expected a input_size > mix.shape[-1], but got {input_size} < {min.shape[-1]}")
 
             out_dict = model(batch_tensor)  # expected (B,1,L) thanks to model alignment
             target_est, residual_est = out_dict["target"], out_dict["residual"]
@@ -288,7 +288,7 @@ def run_inference_pipeline(
 
 if __name__ == "__main__":
     run_inference_pipeline(
-        input_root="guitar_dataset/processed/quality_test/orig",
-        model_checkpoint="model_output/checkpoints/best_snr_db_5.pt",
-        output_root="guitar_dataset/processed/quality_test/recon"
+        input_root="data/processed/quality_test/orig",
+        model_checkpoint="best_snr_db_5.pt",
+        output_root="data/processed/quality_test"
     )
