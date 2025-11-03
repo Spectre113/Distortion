@@ -1,0 +1,10 @@
+metrics:
+  - mse
+  - mae
+  - snr_db
+  - si_sdr
+
+plots:
+  - loss_curve
+  - metric_snr_db
+  - metric_si_sdr
