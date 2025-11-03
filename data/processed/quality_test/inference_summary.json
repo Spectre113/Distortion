@@ -1,5 +1,5 @@
 {
-  "model_checkpoint": "best_snr_db_5.pt",
+  "model_checkpoint": "models/trained/waveunet_guitar_denoising_v2.pt",
   "n_files_requested": 1,
   "n_processed": 1,
   "output_root": "data\\processed\\quality_test",
@@ -7,12 +7,12 @@
     {
       "input_path": "data\\processed\\quality_test\\orig\\quality_test_1.wav",
       "output_path": "data\\processed\\quality_test\\quality_test_1_resid_recon.wav",
-      "checkpoint": "best_snr_db_5.pt",
+      "checkpoint": "models/trained/waveunet_guitar_denoising_v2.pt",
       "sample_rate": 22050,
       "chunk_duration": 3.0,
       "n_chunks": 6,
       "orig_len_samples": 377732,
-      "created_at": "2025-11-02T12:42:20Z"
+      "created_at": "2025-11-03T03:41:54Z"
     }
   ]
 }
