@@ -287,8 +287,9 @@ def run_inference_pipeline(
 
 
 if __name__ == "__main__":
+    project_root = Path(__file__).parent.parent.parent
     run_inference_pipeline(
-        input_root="data/processed/quality_test/orig",
-        model_checkpoint="best_snr_db_5.pt",
-        output_root="data/processed/quality_test"
+        input_root=str(project_root / "data/processed/quality_test/orig"),
+        model_checkpoint=str(project_root / "models/trained/waveunet_guitar_denoising_v1.pt"),
+        output_root=str(project_root / "data/processed/quality_test/recon")
     )
