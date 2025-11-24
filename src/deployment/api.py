@@ -54,10 +54,10 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# Mount static files
-static_dir = Path(__file__).parent / "static"
-static_dir.mkdir(exist_ok=True)
-app.mount("/static", StaticFiles(directory=str(static_dir)), name="static")
+# Mount static files (if needed in the future)
+# static_dir = Path(__file__).parent / "static"
+# static_dir.mkdir(exist_ok=True)
+# app.mount("/static", StaticFiles(directory=str(static_dir)), name="static")
 
 # Global model and device
 model = None
@@ -188,8 +188,8 @@ async def get_version():
 @app.get("/", response_class=HTMLResponse)
 async def root():
     """Serve the main frontend page."""
-    static_dir = Path(__file__).parent / "static"
-    index_path = static_dir / "index.html"
+    project_root = Path(__file__).parent.parent.parent
+    index_path = project_root / "index.html"
     if index_path.exists():
         return index_path.read_text(encoding="utf-8")
     return HTMLResponse(content="<h1>Frontend not found</h1>", status_code=404)
